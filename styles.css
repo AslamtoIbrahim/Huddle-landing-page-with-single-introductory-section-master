@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('images/bg-desktop.svg');
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.item {
+    width: 35%;
+}
+
+.item1 {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+}
+
+.logo {
+    margin-top: 1rem;
+}
+
+.item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+    color: hsl(0deg 0% 100% / 87%);
+}
+
+button {
+    font-family: "Poppins", serif;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 1rem 4rem;
+    color: hsl(257, 40%, 49%);
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    color: hsl(0deg 0% 100% / 87%);
+}
+
+.social-icons {
+    width: 81%;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    justify-content: flex-end;
+
+}
+
+.social-icons a {
+    border: 1px solid hsl(0deg 0% 100% / 87%);
+    padding: 10px 11px;
+    border-radius: 360px;
+    color: hsl(0deg 0% 100% / 87%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(199, 100%, 74%);
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .logo {
+        width: 200px;
+    }
+
+    .image {
+        width: 670px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    button {
+        padding: 1rem 3rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .logo {
+        width: 180px;
+    }
+
+    .image {
+        width: 580px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 0.9rem;
+        margin-top: 0.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    button {
+        padding: 1rem 2.8rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .logo {
+        width: 160px;
+    }
+
+    .image {
+        width: 490px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo {
+        width: 140px;
+    }
+
+    .image {
+        width: 390px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .item1 {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 3rem;
+    }
+
+     .image{
+        width: 100%;
+     }
+
+    .item2 {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: hsl(0, 0%, 100%);
+    }
+    
+    p { 
+        font-size: 1.2rem;
+        margin-top: 0.2rem;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        padding: 1rem 8rem;
+        font-size: 1rem;
+    }
+
+    .social-icons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+    
+    
+
+    .attribution {
+        margin-top: 3rem;
+    }
+}
