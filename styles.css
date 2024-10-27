@@ -23,7 +23,7 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .item {
@@ -31,15 +31,23 @@ main {
 }
 
 .item1 {
-    width: min-content;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 3rem;
+    /* gap: 3rem; */
+    position: relative;
 }
 
 .logo {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+    width: fit-content;
+    position: relative;
+    top: -1rem;
+}
+
+.image {
+    width: 100%;
 }
 
 .item2 {
@@ -146,10 +154,10 @@ button:hover {
         width: 180px;
     }
 
-    .image {
+    /* .image {
         width: 580px;
         height: auto;
-    }
+    } */
 
     h1 {
         font-size: 1.8rem;
@@ -211,6 +219,11 @@ button:hover {
         flex-direction: column;
         align-items: start;
         gap: 3rem;
+    }
+
+    .logo {
+        position: relative;
+        top: 1rem;
     }
 
     .image {
